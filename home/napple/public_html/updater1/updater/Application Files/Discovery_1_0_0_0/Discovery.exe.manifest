@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Discovery.exe" version="1.0.0.0" publicKeyToken="379b206678f600f8" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Arkemu.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Discovery" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Discovery.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le nœud 
+             requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La spécification du nœud requestedExecutionLevel désactivera la virtualisation de fichiers et du Registre.
+            Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la compatibilité 
+            descendante, supprimez le noeud requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Discovery.exe" size="873984">
+      <assemblyIdentity name="Discovery" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>QUjLf+wPmQCI7DrMZa9gesDTZhQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="200704">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="0.86.0.518" publicKeyToken="1B03E6ACF1164F73" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ep35wl1JaQtqPEUWB9MRqGaxMfQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Arkemu.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JLlzjzMN9/2iiSiiDkjGD+ifLhw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Discovery.exe.config" size="167">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4RnS12hQBk60yafGQFP+/DKgMKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Liste de toutes les versions de Windows avec lesquelles cette application peut fonctionner. 
+      Windows sélectionnera automatiquement l'environnement le plus compatible.-->
+      <!-- Si votre application est conçue pour fonctionner avec Windows Vista, supprimez les commentaires du nœud supportedOS suivant-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- Si votre application est conçue pour fonctionner avec Windows 7, supprimez les commentaires du nœud supportedOS suivant-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- Si votre application est conçue pour fonctionner avec Windows 8, supprimez les commentaires du nœud supportedOS suivant-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Master\Master1" issuerKeyHash="c9766372f1127654cef6f2a73ea582b700c386e1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>0pouT6oENsufZHnkuJX7tYnnkTc=</DigestValue></Reference></SignedInfo><SignatureValue>kYcyFbnqwvPRAAToNf3T1Pmc23LFiKx5ZC1lfuALarXYKnDvdenad+pSxodZIP1bmK2bNHlndjMBX12xDaCXUwASjRhM73RGDzh+Tl7VtOvFds/bazjereZRlfaDLXlQyvppD1X5r/1MXGZD2NfJSfQsJoc0Jc9YeQLXSjmy9VE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pYlHNPYV/C/RgbuzGN0khK+Qe1iO5Sl0W9TSQLEuMhsTvSAv4Y7q474buDR1nB+TwAbiNZJkh+ZpMNHUH9z7l4JjuV8Sno51880OQEWrAubPtR9SwXFtLNPh0L2L67WFnJoQ6MTrpZR0XLxezAnnB3K1PLG8tZP63PIluqNhJ9E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3791e789b5fb95b8e479649fcb3604aa4f2e9ad2" Description="" Url=""><as:assemblyIdentity name="Discovery.exe" version="1.0.0.0" publicKeyToken="379b206678f600f8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Master\Master1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TZSF9oVOhfKl5sp9UtvhsMbqQJ8=</DigestValue></Reference></SignedInfo><SignatureValue>Nb+c34Vphmjk9k9LrGv3MHGG9+8E6PXHqiAkjRbUTrOYto2/1dGUWYztOshkkPdLEysOj3Py3il79Zz8oDDAhLk5YP+JjaGHZDGNRKJtbYj5SejZf/mxZY3ebzmPlybMG8XVnh7gC/c/Ckm86ymE/VqNZK8DKk8SNRb+ArFyh7o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pYlHNPYV/C/RgbuzGN0khK+Qe1iO5Sl0W9TSQLEuMhsTvSAv4Y7q474buDR1nB+TwAbiNZJkh+ZpMNHUH9z7l4JjuV8Sno51880OQEWrAubPtR9SwXFtLNPh0L2L67WFnJoQ6MTrpZR0XLxezAnnB3K1PLG8tZP63PIluqNhJ9E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQZfrJO52UOJhMTNjc7F/QPjANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwATQBhAHMAdABlAHIAXABNAGEAcwB0AGUAcgAxMB4XDTE0MDkxNjE5MDM0MVoXDTE1MDkxNzAxMDM0MVowJzElMCMGA1UEAx4cAE0AYQBzAHQAZQByAFwATQBhAHMAdABlAHIAMTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApYlHNPYV/C/RgbuzGN0khK+Qe1iO5Sl0W9TSQLEuMhsTvSAv4Y7q474buDR1nB+TwAbiNZJkh+ZpMNHUH9z7l4JjuV8Sno51880OQEWrAubPtR9SwXFtLNPh0L2L67WFnJoQ6MTrpZR0XLxezAnnB3K1PLG8tZP63PIluqNhJ9ECAwEAATANBgkqhkiG9w0BAQUFAAOBgQBM9CyxN8/nQym2AB2aWS7EEul5T9r4JQ8D90FnsgEiy72sfs2uIeuLq01LuNBSF6DgVBX4tqKRWdEI/42cSQM/SOOWDycxcpJZqBJWt3oaDu6KitID9csruF9NZUAlMs1P7idirMFCx0IzkO7Tdae0X8maZEo0K+ENcUyhj7aPng==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

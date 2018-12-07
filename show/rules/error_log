@@ -1,0 +1,2 @@
+[16-Sep-2014 03:29:18 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/napple/public_html/controllers/&amp;parameters/parameters.php:1) in /home/napple/public_html/controllers/&parameters/parameters.php on line 5
+[16-Sep-2014 03:29:18 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/napple/public_html/controllers/&amp;parameters/parameters.php:1) in /home/napple/public_html/controllers/&parameters/parameters.php on line 5

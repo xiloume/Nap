@@ -1,0 +1,9 @@
+<?php
+require_once('../../controllers/&parameters/parameters.php');
+require_once('../../controllers/&parameters/database.php');
+include('../../controllers/&includes/header.php');
+include('../../controllers/&includes/menu.php');
+include('../../controllers/&includes/slider.php');
+include('../../controllers/&includes/services.php');
+include('../../controllers/&includes/footer.php');
+?>
