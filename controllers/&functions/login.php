@@ -51,7 +51,6 @@ if (isset($_SESSION['id']))
 				$_SESSION['question'] = $resultat['question'];
 				$_SESSION['reponse'] = $resultat['reponse'];
 				$_SESSION['points'] = $resultat['points'];
-				$_SESSION['level'] = $resultat['level'];
 				$_SESSION['achatsStarpass'] = $resultat['achatsStarpass'];
 				$_SESSION['achatsPaypal'] = $resultat['achatsPaypal'];
 				$_SESSION['adminWEB'] = $resultat['adminWEB'];
